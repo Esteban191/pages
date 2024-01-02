@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartDataElectra</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="templates/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-sqfs5I+9chEbqlxWOqzLLEwRucRr4p7iKzsHiqhsImvvhrH9+2BP9B9quXypRRS0TwEzAKl2YVRBw3/tBE8eVvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="templates/logo4.png" alt="SmartDataElectra Logo">
+            </div>
+            <h1>SmartDataElectra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://es.fiverr.com/estebanalzat502?up_rollout=true" target="_blank" rel="noopener noreferrer">fiver</a>
+                <a href="https://www.instagram.com/imperium_electronic/" target="_blank" rel="noopener noreferrer">instagram</a>
+                <a href="https://www.linkedin.com/in/andres-esteban-alzate-serna-b7105a21a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://wa.me/+573205483686" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+            
+
+
+
+
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            
+            <p>Welcome to SmartDataElectra, where innovation meets intelligence. Explore the future with us!</p>
+            <div class="media-container">
+                <img src="templates/m.png" alt="SmartDataElectra Image">
+                <video controls>
+                    <source src="templates/1_el mejor.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p>Discover our comprehensive range of services, including data analysis, AI development, and electronic design. We are committed to providing solutions that empower businesses and individuals in the digital age.</p>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-carousel">
+                <div><img src="templates/1_resize.png" alt="Image 1"></div>
+                <div><img src="templates/descarga (7).png" alt="Image 2"></div>
+                <div><img src="templates/2.png" alt="Image 3"></div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries or to learn more about our services, please fill out the form below:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+    <script src="templates/app.js"></script>
+</body>
+</html>
